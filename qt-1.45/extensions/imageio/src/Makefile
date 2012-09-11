@@ -10,8 +10,8 @@
 ####### BEGIN
 #
 #   This section was automatically generated from
-#      /usr/lib/qt-1.45/Makefile for building on
-#       on Sun May 14 19:46:15 PDT 2000
+#      /home/mati/1de/qt-1.45/Makefile for building on
+#       on wto, 11 wrz 2012, 20:44:54 CEST
 #
 
 # Compiling
