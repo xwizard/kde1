@@ -2,3 +2,4 @@
 moc_*.cpp
 *.moc
 *.so*
+variables
