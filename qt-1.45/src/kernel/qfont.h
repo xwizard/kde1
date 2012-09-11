@@ -136,6 +136,7 @@ private:
     friend class QFontMetrics;
     friend class QFontInfo;
     friend class QPainter;
+    friend class QFontInternal;
     friend Q_EXPORT QDataStream &operator<<( QDataStream &, const QFont & );
     friend Q_EXPORT QDataStream &operator>>( QDataStream &, QFont & );
 
