@@ -32,7 +32,7 @@
 #include <mimelib/token.h>
 
 
-ostream* DwTokenizer::mDebugOut = 0;
+std::ostream* DwTokenizer::mDebugOut = 0;
 
 
 DwTokenizer::DwTokenizer(const DwString& aStr)
@@ -221,7 +221,7 @@ void DwTokenizer::ParseDomainLiteral()
 }
 
 
-void DwTokenizer::PrintToken(ostream* aOut)
+void DwTokenizer::PrintToken(std::ostream* aOut)
 {
     if (!aOut) return;
     char* type = 0;

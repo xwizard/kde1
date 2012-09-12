@@ -3,3 +3,6 @@ moc_*.cpp
 *.moc
 *.so*
 variables
+.libs
+libtool
+stamp-h

@@ -259,13 +259,13 @@ bool QwPositionedSprite<COORD>::wouldHit(QwSpriteFieldGraphic& other, COORD x, C
 }
 
 /*!
-\fn COORD QwPositionedSprite::exact_x() const
+\fn COORD QwPositionedSprite::this->exact_x() const
 Returns the X-position, in COORD units rather than the integer pixel
 coordinates used by the graphical engine.
 */
 
 /*!
-\fn COORD QwPositionedSprite::exact_y() const
+\fn COORD QwPositionedSprite::this->exact_y() const
 Returns the Y-position, in COORD units rather than the integer pixel
 coordinates used by the graphical engine.
 */
@@ -325,8 +325,8 @@ This is the default when the sprite is created.
 template <class COORD>
 void QwMobilePositionedSprite<COORD>::adoptSpritefieldBounds()
 {
-    if (spritefield) {
-        bounds(0,0,spritefield->width()-1,spritefield->height()-1);
+    if (this->spritefield) {
+        bounds(0,0,this->spritefield->width()-1,this->spritefield->height()-1);
     } else {
         // Simple default so programmer can see the problem
         bounds(0,0,50,50);
@@ -373,8 +373,8 @@ happen if the bounds action is set to Ignore.
 template <class COORD>
 bool QwMobilePositionedSprite<COORD>::outOfBounds()
 {
-    return (exact_x()<b_left) || (exact_x()>b_right)
-        || (exact_y()<b_top) || (exact_y()>b_bottom);
+    return (this->exact_x()<b_left) || (this->exact_x()>b_right)
+        || (this->exact_y()<b_top) || (this->exact_y()>b_bottom);
 }
 
 /*!
@@ -459,7 +459,7 @@ multiplied by the current velocity of the sprite.
 template <class COORD>
 void QwMobilePositionedSprite<COORD>::forward(COORD multiplier)
 {
-    QwPositionedSprite<COORD>::moveTo(exact_x()+multiplier*dx, exact_y()+multiplier*dy);
+    QwPositionedSprite<COORD>::moveTo(this->exact_x()+multiplier*dx, this->exact_y()+multiplier*dy);
 }
 
 /*!
@@ -473,9 +473,9 @@ has already been dealt with.
 template <class COORD>
 Pix QwMobilePositionedSprite<COORD>::forwardHits(COORD multiplier, int frme) const
 {
-    int ix = int(exact_x()+multiplier*dx);
-    int iy = int(exact_y()+multiplier*dy);
-    if (ix == x() && iy == y())
+    int ix = int(this->exact_x()+multiplier*dx);
+    int iy = int(this->exact_y()+multiplier*dy);
+    if (ix == this->x() && iy == this->y())
 	return 0;
     return QwPositionedSprite<COORD>::neighbourhood((COORD)ix, (COORD)iy, frme);
 }
@@ -491,9 +491,9 @@ has already been dealt with.
 template <class COORD>
 Pix QwMobilePositionedSprite<COORD>::forwardHits(COORD multiplier) const
 {
-    int ix = int(exact_x()+multiplier*dx);
-    int iy = int(exact_y()+multiplier*dy);
-    if (ix == x() && iy == y())
+    int ix = int(this->exact_x()+multiplier*dx);
+    int iy = int(this->exact_y()+multiplier*dy);
+    if (ix == this->x() && iy == this->y())
 	return 0;
     return QwPositionedSprite<COORD>::neighbourhood(ix, iy);
 }
@@ -507,7 +507,7 @@ the given index.
 template <class COORD>
 void QwMobilePositionedSprite<COORD>::forward(COORD multiplier, int frme)
 {
-    moveTo(exact_x()+multiplier*dx, exact_y()+multiplier*dy, frme);
+    moveTo(this->exact_x()+multiplier*dx, this->exact_y()+multiplier*dy, frme);
 }
 
 /*!

@@ -53,7 +53,7 @@
 // classes are fairly simple and efficient.
 // In addition, polymorphism is not needed to use the tokenizer classes.
 
-class ostream;
+//class std::ostream;
 
 enum {
     eTkError=-1,
@@ -74,12 +74,12 @@ public:
     const DwString& Token() const { return mToken; }
     int Type() const              { return mTkType; }
     void StripDelimiters();
-    static ostream* mDebugOut;
+    static std::ostream* mDebugOut;
 protected:
     DwTokenizer(const DwString& aStr);
     DwTokenizer(const char* aCStr);
     virtual ~DwTokenizer();
-    void PrintToken(ostream*);
+    void PrintToken(std::ostream*);
     // Quoted strings, comments, and domain literals are parsed
     // identically in RFC822 and RFC1521
     void ParseQuotedString();
