@@ -6,3 +6,6 @@ variables
 .libs
 libtool
 stamp-h
+config.status
+config.log
+*.lo
