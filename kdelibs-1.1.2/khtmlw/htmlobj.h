@@ -37,6 +37,7 @@
 #include <qtimer.h>
 
 class QMovie;
+class QBuffer;
 
 #define USE_QMOVIE
 

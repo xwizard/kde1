@@ -22,6 +22,8 @@
 #include <string>
 #include <list>
 
+using namespace std;
+
 /* The map-header is needed, but declares two global 
  * symbols that are also globally declared in Qt, "red"
  * and "black", in the HP version.

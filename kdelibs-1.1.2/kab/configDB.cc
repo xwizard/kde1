@@ -15,7 +15,7 @@
 
 #include "configDB.h"
 #include "debug.h"
-#include <fstream.h>
+#include <fstream>
 extern "C" {
 #include <sys/types.h>
 #include <signal.h>

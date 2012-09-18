@@ -15,6 +15,7 @@
 #include "sections.h"
 #include "debug.h" 
 #include "functions.h"
+#include <iostream>
 
 const int Section::indent_width=2;
 

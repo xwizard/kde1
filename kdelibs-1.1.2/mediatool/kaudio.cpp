@@ -18,7 +18,7 @@
 */
 #include <stdio.h>
 #include <stdlib.h>
-#include <iostream.h>
+#include <iostream>
 #include <unistd.h>
 #include <string.h>
 #ifdef HAVE_CONFIG_H
@@ -55,7 +55,7 @@ KAudio::KAudio() : QObject()
   int homePathLen = strlen(tmpadr);
 
   if ( (homePathLen+strlen(kasFileName)+1 ) >= maxFnameLen ) {
-    cerr <<  "HOME path too long.\n";
+    std::cerr <<  "HOME path too long.\n";
     return;
   }
   strcpy(KMServerCidFile,tmpadr);
@@ -64,7 +64,7 @@ KAudio::KAudio() : QObject()
   KMServerCidHandle = fopen(KMServerCidFile,"r");
   if (KMServerCidHandle == 0L)
     {
-      cerr << "PID could not get read.\n";
+      std::cerr << "PID could not get read.\n";
       return;
     }
 
@@ -77,32 +77,32 @@ KAudio::KAudio() : QObject()
   MdConnect(atoi(ServerId), &m);
   if ( m.shm_adr == 0L )
     {
-      cerr << "Could not find media master.\n";
+      std::cerr << "Could not find media master.\n";
       return;
     }
   /************* query for chunk adresses **************************/
   FnamChunk = (MdCh_FNAM*)FindChunkData(m.shm_adr, "FNAM");
   if (!FnamChunk)
     {
-      cerr << "No FNAM chunk.\n";
+      std::cerr << "No FNAM chunk.\n";
       return;
     }
   IhdrChunk = (MdCh_IHDR*)FindChunkData(m.shm_adr, "IHDR");
   if (!IhdrChunk)
     {
-      cerr << "No IHDR chunk.\n";
+      std::cerr << "No IHDR chunk.\n";
       return;
     }
   KeysChunk = (MdCh_KEYS*)FindChunkData(m.shm_adr, "KEYS");
   if (!KeysChunk)
     {
-      cerr << "No KEYS chunk.\n";
+      std::cerr << "No KEYS chunk.\n";
       return;
     }
   StatChunk = (MdCh_STAT*)FindChunkData(m.shm_adr, "STAT");
   if (!StatChunk)
     {
-      cerr << "No STAT chunk.\n";
+      std::cerr << "No STAT chunk.\n";
       return;
     }
 

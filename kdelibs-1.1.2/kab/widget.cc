@@ -27,6 +27,7 @@
 #include <qpaintdevicemetrics.h> 
 #include <qpainter.h>
 #include <qprogressdialog.h>
+#include <iostream>
 #include <qclipboard.h>
 #include <qtimer.h>
 #include <kbutton.h>
@@ -579,8 +580,8 @@ void AddressWidget::currentChanged()
     { // careful! distance(..) broken for empty containers!
       // (should return zero but crashes)
       // cast needed because of ambiguosity
-      distance((StringStringMap::iterator)entries.begin(), 
-	       (StringStringMap::iterator)current, which);
+      which = distance((StringStringMap::iterator)entries.begin(), 
+	       (StringStringMap::iterator)current);
       CHECK(which<noOfEntries());
       LG(GUARD, "AddressWidget::currentChanged: activating "
 	 "item %i in selector.\n", which);

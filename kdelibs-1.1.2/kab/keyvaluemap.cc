@@ -13,11 +13,12 @@
 #include "keyvaluemap.h"
 #include "debug.h"
 #include "functions.h"
-#include <iostream.h>
+#include <iostream>
 extern "C" {
 #include <stdio.h>
 	   }
-#include <fstream.h>
+#include <fstream>
+#include <stdlib.h>
 
 class StringStringMap 
   : public map<string, string, less<string> >
@@ -131,7 +132,7 @@ KeyValueMap::save(const string& filename, bool force)
     {
       file.open(filename.c_str());
     } else {
-      file.open(filename.c_str(), ios::nocreate);
+      file.open(filename.c_str());
     }
   if(!file.good())
     {
@@ -468,7 +469,7 @@ KeyValueMap::insertLine(string line, bool force, bool relax, bool encode)
     }
   // -----
   key.assign(line, 0, index); // copy from start to '='
-  value.assign(line, index+1); // copy the rest
+  value.assign(line,0, index+1); // copy the rest
   // keys should not contain whitespaces 
   // to avoid unpredictable results
   for(;;)

@@ -19,6 +19,8 @@
 #include "configDB.h"
 #include <qdatetime.h>
 
+using namespace std;
+
 // -----------------------------
 // this will be incremented when kab's file format changes
 // significantly

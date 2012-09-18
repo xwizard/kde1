@@ -17,6 +17,7 @@
 #endif
 #include <kapp.h>
 #include "debug.h"
+#include <iostream>
 
 extern "C" {
 #include <sys/types.h>

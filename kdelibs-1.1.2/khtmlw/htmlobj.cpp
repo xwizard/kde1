@@ -636,7 +636,7 @@ HTMLFitType HTMLTextSlave::fitLine( bool startOfLine, bool firstRun,
     int newWidth;
     char *splitPtr;
 
-    const char *text = owner->text;
+    char *text = (char*)owner->text;
     // Set font settings in painter for correct width calculation
     QFontMetrics fm( *(owner->font) );
 

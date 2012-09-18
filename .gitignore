@@ -9,3 +9,4 @@ stamp-h
 config.status
 config.log
 *.lo
+*.la

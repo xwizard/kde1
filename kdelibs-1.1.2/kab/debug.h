@@ -20,6 +20,8 @@
 #ifndef KAB_DEBUG_H
 #define	KAB_DEBUG_H
 
+using namespace std;
+
 // ##############################################################################
 // include C headers: (some are included conditionally later)
 extern "C" {

@@ -13,6 +13,8 @@
 #ifndef AssertDialog_included
 #define AssertDialog_included
 
+using namespace std;
+
 class QRadioButton;
 
 #include "stl_headers.h"

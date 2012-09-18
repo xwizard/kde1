@@ -6,19 +6,19 @@
  *
  * Capabilities of the class are:
  * - storing of any key-value-pair that is storable in 
- *   string values,
+ *   std::string values,
  * - key-value-pairs are saved in human-readable text files
  *   when saving to disk,
  * - the values may contain newline and tabulator characters
  *   which will still be there after saving and rereading,
  * - supports the following datatypes:
- *   - strings (of course),
+ *   - std::strings (of course),
  *   - integers,
  *   - floating point values and
  *   - boolean states
  * - supports storing and retrieving lists of values of the 
  *   following datatypes:
- *   - strings,
+ *   - std::strings,
  *   - integers and
  *   - floating point values
  *   (bools possibly supported in future)
@@ -27,9 +27,9 @@
  *   guarantess anything, don't you?)  that every value that 
  *   has been  stored  by one of the member functions of the 
  *   class like 
- *      insert(const string& key, [value&]);
+ *      insert(const std::string& key, [value&]);
  *   can also be retrieved using 
- *      get(const string& key, [value&]);
+ *      get(const std::string& key, [value&]);
  *   without being modified.
  *   (Please report anything that does not do so!)
  *
@@ -38,7 +38,7 @@
  * license:    GNU Public License, Version 2
  * mail to:    Mirko Sucker <mirko.sucker@hamburg.netsurf.de>
  *                          <mirko.sucker@unibw-hamburg.de>
- * requires:   C++-compiler, STL, string class
+ * requires:   C++-compiler, STL, std::string class
  *             Nana (only for debugging)
  * $Revision: 1.5 $
  */
@@ -48,7 +48,10 @@
 #pragma interface
 
 #include "stl_headers.h"
-#include <fstream.h>
+#include <fstream>
+#include <string>
+
+using namespace std;
 
 // forward declaration needed to avoid duplicate declaration 
 // of global specifiers "red" and "black" in
@@ -63,24 +66,24 @@ class KeyValueMap {
 protected:
   StringStringMap* data;
   // helper for file handling:
-  // bool isComment(const string&);
+  // bool isComment(const std::string&);
   // WORK_TO_DO: this is alpha, remove comment after testing
-  /// returns true if a "complex string" was found
-  bool parseComplexString(const string& orig, 
-			  string::size_type index,
-			  string& result,
+  /// returns true if a "complex std::string" was found
+  bool parseComplexString(const std::string& orig, 
+			  std::string::size_type index,
+			  std::string& result,
 			  int& noOfChars) const;
-  /// codes a normal string into a complex string:
-  string makeComplexString(const string& orig);
-  /** Inserts a string (it must be an already coded one)
+  /// codes a normal std::string into a complex std::string:
+  std::string makeComplexString(const std::string& orig);
+  /** Inserts a std::string (it must be an already coded one)
     * without coding it.
     */
-  bool insertRaw(const string& key, 
-		 const string& value, 
+  bool insertRaw(const std::string& key, 
+		 const std::string& value, 
 		 bool force=false);
   /** Retrieves the undecoded value of the given key.
     */
-  bool getRaw(const string& key, string& value) const;
+  bool getRaw(const std::string& key, std::string& value) const;
   // -------------------------
 public:
   KeyValueMap();
@@ -99,70 +102,70 @@ public:
     *         ° wether to override existing keys or not
     *         ° wether values may be empty
     */
-  bool fill(const string&, bool force=false, bool relax=false);
+  bool fill(const std::string&, bool force=false, bool relax=false);
   /** Saves the database to a file. Only overrides existing 
     * files if force is true.
     * params: filename and wether to override existing files or not
     */
-  bool save(const string&, bool force=false);
+  bool save(const std::string&, bool force=false);
   /** Saves contents to an already open stream,
     * placing "count" spaces before each line. This method is 
     * called to save fierarchical databases.
     */
-  bool save(ofstream& file, int count);
+  bool save(std::ofstream& file, int count);
   /* The following pairs of get(..) and insert(..) member functions
    * can be used to store single objects and lists of the 
    * respective data types.
-   * The string-insert- and -get-methods are somewhat basic since
+   * The std::string-insert- and -get-methods are somewhat basic since
    * they are used by all other insert functions, the others 
-   * create a string from the respective data and insert this 
-   * string.
+   * create a std::string from the respective data and insert this 
+   * std::string.
    */
   // params of get: key, reference to value storage
   // params of insert: key, value and wether  to 
   // override existing keys or not
-  // string values:
-  bool get(const string&, string&) const;
-  bool insert(const string&, const string&, 
+  // std::string values:
+  bool get(const std::string&, std::string&) const;
+  bool insert(const std::string&, const std::string&, 
 	      bool force=false);
-  // dummy function to explicitly catch char* as strings
+  // dummy function to explicitly catch char* as std::strings
   // (pgcc treats them as bool objects!)
-  inline bool insert(const string& key, const char* value,
+  inline bool insert(const std::string& key, const char* value,
 		     bool force=false);
   // additional insert method for lines
   // params: "<key>=<value>",
   // wether  to override existing keys or not and
-  // wether values my be empty strings or not and
+  // wether values my be empty std::strings or not and
   // wether to code the value or not (INTERNAL)
-  bool insertLine(string, 
+  bool insertLine(std::string, 
 		  bool force=false, 
 		  bool relax=false, 
 		  bool encode=true);
   // ---------------
   // integer values:
-  bool get(const string&, int&) const;
-  bool insert(const string&, const int&, bool force=false);
+  bool get(const std::string&, int&) const;
+  bool insert(const std::string&, const int&, bool force=false);
   // ---------------
   // double values:
-  bool get(const string&, double&) const;
-  bool insert(const string&, const double&, bool force=false);
+  bool get(const std::string&, double&) const;
+  bool insert(const std::string&, const double&, bool force=false);
   // ---------------
   // boolean values:
-  bool get(const string&, bool&) const;
-  bool insert(const string&, const bool&, bool force=false);
+  bool get(const std::string&, bool&) const;
+  bool insert(const std::string&, const bool&, bool force=false);
   // ---------------
   // the following methods try to parten the values into lists of values
-  // string lists:
-  bool get(const string&, list<string>&) const;
-  bool insert(const string&, const list<string>&, bool force=false);
+  // std::string lists:
+  bool get(const std::string&, list<std::string>&) const;
+  bool insert(const std::string&, const list<std::string>&, bool force=false);
   // --------------
   // integer lists:
-  bool get(const string&, list<int>&) const;
-  bool insert(const string&, const list<int>&, bool force=false);
+  bool get(const std::string&, list<int>&) const;
+  bool insert(const std::string&, const list<int>&, bool force=false);
   // --------------
   // double lists:
-  bool get(const string&, list<double>&) const;
-  bool insert(const string&, const list<double>&, bool force=false);
+  bool get(const std::string&, list<double>&) const;
+  bool insert(const std::string&, const list<double>&, bool force=false);
   // --------------
   // end of corresponding get-insert-pairs
   // -------------------------
@@ -171,15 +174,15 @@ public:
   /** Erases all key-value-pairs in the map, 
     * the map is empty after it.
     */ 
-  bool erase(const string& key);
+  bool erase(const std::string& key);
 };
 
 // ----- inline functions:
 bool KeyValueMap::insert
-(const string& key, const char* value,
+(const std::string& key, const char* value,
  bool force)
 { 
-  string temp(value); 
+  std::string temp(value); 
   return insert(key, temp, force); 
 }
 // -----
