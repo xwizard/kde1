@@ -414,7 +414,7 @@ static time_t parseExpire(const char *expireDate)
      }
      monthStr[3] = '\0';
      
-     newPosStr = strstr(haystack, monthStr);
+     newPosStr = strstr((char*)haystack, monthStr);
 
      if (!newPosStr)
      	return result;  // Invalid expire date

@@ -6,12 +6,14 @@
 //
 
 #include <stdlib.h>
-#include <iostream.h>
+#include <iostream>
 #include "error.h"
 
 cError Error;
 #include <klocale.h>
 #include <kapp.h>
+
+using namespace std;
 
 // ============================================================================
 // The default error handler

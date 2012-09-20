@@ -171,7 +171,7 @@ x_includes = @x_includes@
 x_libraries = @x_libraries@
 xdmconfigsubdir = @xdmconfigsubdir@
 
-SUBDIRS = kcheckpass kfm mimetypes kdehelp kfontmanager kfind kvt 	kwm kpanel kwmcom kwmmodules krootwm kdm kscreensaver 	kmenuedit kaudio kcontrol kappfinder pics applnk doc config 	kstart kikbd konsole po
+SUBDIRS = kcheckpass kfm mimetypes kdehelp kfontmanager kfind kvt 	kwm kpanel kwmcom kwmmodules krootwm kdm kscreensaver 	kmenuedit kcontrol kappfinder pics applnk doc config 	kstart kikbd konsole po
 
 
 AUTOMAKE_OPTIONS = foreign 1.4

@@ -197,9 +197,9 @@ const char *KBookmarkManager::parse( BookmarkTokenizer *ht, KBookmark *parent,
 					}
 					else
 					{
-						char *p2 = strchr( p, ' ' );
+						char *p2 = strchr( (char*)p, ' ' );
 						if ( p2 == 0L )
-							p2 = strchr( p, '>');
+							p2 = strchr( (char*)p, '>');
 						else
 							p2++;
 						p = p2;

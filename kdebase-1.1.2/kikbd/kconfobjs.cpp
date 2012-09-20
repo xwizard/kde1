@@ -19,7 +19,7 @@
    
   */
 #include <stdlib.h>	
-#include <stream.h>
+#include <iostream>
 #include <qchkbox.h>
 #include <qcombo.h>
 #include <qbttngrp.h>
@@ -35,6 +35,8 @@
 #include "kobjconf.h"
 #include "kconfobjs.h"
 #include "kconfobjs.moc"
+
+using namespace std;
 
 /*********************************************************************
  * regexp matched keys Config Object

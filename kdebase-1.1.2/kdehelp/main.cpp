@@ -28,6 +28,8 @@
 #include <floatingpoint.h>
 #endif
 
+using namespace std;
+
 static void cleanup( int );
 void catchSignals();
 

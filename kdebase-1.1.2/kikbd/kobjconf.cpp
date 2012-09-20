@@ -19,7 +19,7 @@
    
   */
 #include <stdlib.h>	
-#include <stream.h>
+#include <iostream>
 #include <qfileinf.h>
 #include <qtooltip.h>
 
@@ -28,6 +28,8 @@
 
 #include "kobjconf.h"
 #include "kobjconf.moc"
+
+using namespace std;
 
 const char *configGroup   = "KObjectConfig";
 const char *configVersion = "Version";

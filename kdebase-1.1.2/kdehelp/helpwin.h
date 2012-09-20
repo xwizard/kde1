@@ -46,6 +46,8 @@
 #define BUTTON_SEPARATION	6
 #define BOOKMARK_ID_BASE	200
 
+using namespace std;
+
 //-----------------------------------------------------------------------------
 
 class KOpenURLDialog : public QDialog

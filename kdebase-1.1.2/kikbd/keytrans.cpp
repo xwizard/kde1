@@ -18,7 +18,7 @@
   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
    
   */
-#include <stream.h>
+#include <iostream>
 #include <stdio.h>
 #include <qkeycode.h>
 #include <qregexp.h>

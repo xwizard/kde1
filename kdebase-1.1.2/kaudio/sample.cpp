@@ -1,9 +1,11 @@
 #include <stdio.h>
-#include <iostream.h>
+#include <iostream>
 #include <sys/stat.h>
 #include "sample.h"
 #include "maudio.h"
 #include <string.h>
+
+using namespace std;
 
 // Wavplay compatibility function
 #ifdef DEBUG

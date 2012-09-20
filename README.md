@@ -9,3 +9,7 @@ As Qt License state, its sources cannot be modified,
 which obviously had to be done in order to build it
 with modern toolchain. I'm going to contact Qt owner
 to clarify situation soon :)
+
+Todo
+===
+Fix kdebase/kaudio build

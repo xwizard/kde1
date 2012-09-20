@@ -10,6 +10,8 @@
 #include <paths.h>
 #endif
 
+#include <cstdlib>
+
 #ifndef _PATH_TMP
 #define _PATH_TMP "/tmp/"
 #endif

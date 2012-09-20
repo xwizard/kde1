@@ -2,7 +2,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <errno.h>
-#include <iostream.h>
+#include <iostream>
 #include <string.h>
 #include <fcntl.h>
 #include <config.h>
@@ -19,6 +19,7 @@ extern "C" {
 
 #define USLEEP_DELAY	1000
 
+using namespace std;
 
 uint32		*StatStatPtr=NULL;
 MdCh_STAT	*StatChunk;

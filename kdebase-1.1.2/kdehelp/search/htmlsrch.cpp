@@ -1,12 +1,14 @@
 
 #include <stdlib.h>
-#include <iostream.h>
+#include <iostream>
 #include <qdir.h>
 #include <qfile.h>
 #include <qtstream.h>
 #include <qstring.h>
 #include <qlist.h>
 #include <kapp.h>
+
+using namespace std;
 
 class Match
 {

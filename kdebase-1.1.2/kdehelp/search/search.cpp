@@ -12,6 +12,8 @@
 #include "mansrch.h"
 #include "htmlsrch.h"
 
+using namespace std;
+
 const char *parseQuery( const char *str, QString &name, QString &value );
 QString decodeQuery( QString &str );
 

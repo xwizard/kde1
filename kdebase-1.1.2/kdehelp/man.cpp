@@ -35,6 +35,8 @@
 
 #define MAXSECTIONLEN	4
 
+using namespace std;
+
 // ============================================================================
 // this is an array of sections available
 // the first instance of cMan creates these sections

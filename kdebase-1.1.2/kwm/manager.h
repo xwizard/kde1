@@ -113,7 +113,7 @@ public:
   Client* getClient(Window w);
 
   // get a pointer to the Client object from the sizegrip
-  Client* Manager::getClientFromSizegrip(Window w);
+  Client* getClientFromSizegrip(Window w);
 
   // returns the current client (the client which has the focus) or 0
   // if no client has the focus.

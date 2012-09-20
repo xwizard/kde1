@@ -12,7 +12,7 @@
 #define __MAN_H__
 
 #include <stdlib.h>
-#include <fstream.h>
+#include <fstream>
 #include <qstring.h>
 #include "fmtbase.h"
 #include "misc.h"

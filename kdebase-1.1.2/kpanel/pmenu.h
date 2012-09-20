@@ -20,6 +20,7 @@
 #include <qpopmenu.h>
 
 #include <kapp.h>
+#include <cstdlib>
 
 class QDir;
 class PMenu;

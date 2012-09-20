@@ -957,7 +957,7 @@ int main(int argc, char* argv[])
 
   int c = 0, l = 0;
   if ( (strcmp("", sz) != 0) )
-  { char *ls = strchr( sz, 'x' );
+  { char *ls = strchr( sz.data(), 'x' );
     if ( ls != NULL )
     { *ls='\0'; ls++; c=atoi(sz); l=atoi(ls); }
     else

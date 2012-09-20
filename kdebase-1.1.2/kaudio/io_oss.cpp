@@ -1,7 +1,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <sys/stat.h>
-#include <iostream.h>
+#include <iostream>
 #include <errno.h>
 
 // Linux/OSS includes
@@ -46,7 +46,7 @@
 
 extern int          BUFFSIZE;   // Crap! Must be out into AudioSample class
 
-
+using namespace std;
 
 AudioDev::AudioDev(int devnum)
 {

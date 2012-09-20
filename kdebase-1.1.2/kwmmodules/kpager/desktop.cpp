@@ -503,7 +503,7 @@ bool Desktop::contains(Window w)
     return (getIndexOfWindow(w)==-1)? false : true;
 }
 
-WindowProperties *Desktop::windowAtPosition(const QPoint *p,bool *ok,QPoint *pos=0L)
+WindowProperties *Desktop::windowAtPosition(const QPoint *p,bool *ok,QPoint *pos)
 {
     WindowProperties *wp=window_list->last();
     if (wp==0L) 

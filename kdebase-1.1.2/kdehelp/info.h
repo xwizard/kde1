@@ -9,7 +9,7 @@
 #define __INFO_H__
 
 #include <stdlib.h>
-#include <fstream.h>
+#include <fstream>
 #include "fmtbase.h"
 #include "dbnew.h"
 
@@ -43,6 +43,8 @@
 #define INFO_HEADING1			1
 #define INFO_HEADING2			2
 #define INFO_HEADING3			3
+
+using namespace std;
 
 // ============================================================================
 // Indirect info file structs and classes
