@@ -230,7 +230,7 @@ Range.o Tape.o TapeDrive.o TapeFileInfoWidget.o TapeInfoWidget.o \
 TapeManager.o FormatOptDlg.o TarParser.o Util.o VerifyDlg.o \
 VerifyOptDlg.o ktreeview.o main.o
 kdat_DEPENDENCIES = 
-CXXFLAGS = @CXXFLAGS@
+CXXFLAGS = @CXXFLAGS@ -fpermissive
 CXXCOMPILE = $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
 LTCXXCOMPILE = $(LIBTOOL) --mode=compile $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
 CXXLD = $(CXX)
