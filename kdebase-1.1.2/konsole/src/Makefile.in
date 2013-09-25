@@ -255,7 +255,7 @@ konsole_grantpty_OBJECTS =  konsole_grantpty.o
 konsole_grantpty_LDADD = $(LDADD)
 konsole_grantpty_DEPENDENCIES = 
 konsole_grantpty_LDFLAGS = 
-CXXFLAGS = @CXXFLAGS@
+CXXFLAGS = @CXXFLAGS@ -fpermissive
 CXXCOMPILE = $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
 LTCXXCOMPILE = $(LIBTOOL) --mode=compile $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
 CXXLD = $(CXX)
