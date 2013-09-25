@@ -10,6 +10,14 @@ which obviously had to be done in order to build it
 with modern toolchain. I'm going to contact Qt owner
 to clarify situation soon :)
 
+Build order
+===
+qt
+kdesupport
+kdelibs
+kdebase
+kdeadmin
+
 Todo
 ===
 Fix kdebase/kaudio build
