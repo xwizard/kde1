@@ -21,3 +21,4 @@ kdeadmin
 Todo
 ===
 Fix kdebase/kaudio build
+Fix kdeadmin/kuser build
