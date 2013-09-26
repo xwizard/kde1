@@ -12,13 +12,13 @@ to clarify situation soon :)
 
 Build order
 ===
-qt
-kdesupport
-kdelibs
-kdebase
-kdeadmin
+- qt
+- kdesupport
+- kdelibs
+- kdebase
+- kdeadmin
 
 Todo
 ===
-Fix kdebase/kaudio build
-Fix kdeadmin/kuser build
+- Fix kdebase/kaudio build
+- Fix kdeadmin/kuser build
