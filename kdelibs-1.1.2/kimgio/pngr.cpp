@@ -20,7 +20,7 @@
 #include<qfile.h>
 
 extern "C" {
-#include<png.h>
+#include<libpng12/png.h>
 }
 
 void kimgio_png_read( QImageIO *io )
