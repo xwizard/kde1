@@ -10,3 +10,4 @@ config.status
 config.log
 *.lo
 *.la
+build/

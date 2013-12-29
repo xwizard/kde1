@@ -175,7 +175,7 @@ GZIP_ENV = --best
 all: all-redirect
 .SUFFIXES:
 $(srcdir)/Makefile.in: Makefile.am $(top_srcdir)/configure.in $(ACLOCAL_M4) 
-	cd $(top_srcdir) && $(AUTOMAKE) --foreign --include-deps Makefile
+	cd $(top_srcdir) && echo dupa --foreign --include-deps Makefile
 
 Makefile: $(srcdir)/Makefile.in  $(top_builddir)/config.status
 	cd $(top_builddir) \
@@ -200,7 +200,7 @@ $(srcdir)/config.h.in: $(srcdir)/stamp-h.in
 		$(MAKE) $(srcdir)/stamp-h.in; \
 	else :; fi
 $(srcdir)/stamp-h.in: $(top_srcdir)/configure.in $(ACLOCAL_M4) acconfig.h
-	cd $(top_srcdir) && $(AUTOHEADER)
+	cd $(top_srcdir) && echo dupa
 	@echo timestamp > $(srcdir)/stamp-h.in 2> /dev/null
 
 mostlyclean-hdr:
