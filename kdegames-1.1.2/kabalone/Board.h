@@ -93,7 +93,7 @@ class Board : public QObject
 	 * Always call with step 0 before actual playing the move !! */
 	void showStart(const Move& m, int step);
 
-	Move& Board::lastMove()
+	Move& lastMove()
 	  { return storedMove[storedLast]; }
 	
 	void showHist();

@@ -40,7 +40,7 @@ QString Score::formatDate(int d, int m, int y)
     return s;
 }
 
-void Score::display(int newHall = -1, int newToday = -1)
+void Score::display(int newHall = -1, int newToday)
 {
     QDialog *dlg = new QDialog(0, "Hall Of Fame", TRUE);
     dlg->setCaption(klocale->translate("Snake Race High Scores"));

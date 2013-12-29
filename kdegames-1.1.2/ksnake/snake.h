@@ -17,7 +17,7 @@ class Snake : public QObject
     Q_OBJECT
 public:
     Snake(Board *b, PixServer *p, Gate g, PixMap x);
-    Snake::~Snake() {}
+    ~Snake() {}
     void repaint( bool );
     void zero();
 signals:

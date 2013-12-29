@@ -57,7 +57,7 @@ void PixServer::restore(int pos)
 	    rect.x(), rect.y(), rect.width(), rect.height());
 }
 
-void PixServer::draw(int pos, PixMap pix, int i = 0)
+void PixServer::draw(int pos, PixMap pix, int i)
 {
     QPixmap p;
     p.resize(16, 16);

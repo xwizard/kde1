@@ -22,7 +22,7 @@ class Game : public KTopLevelWidget
     Q_OBJECT
 public:
     Game();
-    Game::~Game() {}
+    ~Game() {}
 protected:
     //   void keyPressEvent( QKeyEvent * );
 private slots:
