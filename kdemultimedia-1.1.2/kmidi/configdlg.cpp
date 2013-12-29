@@ -33,7 +33,7 @@
 extern KApplication *thisapp;
 
 
-ConfigDlg::ConfigDlg(QWidget *parent=0, struct configstruct *data = 0,const char *name=0)
+ConfigDlg::ConfigDlg(QWidget *parent, struct configstruct *data ,const char *name)
   : QDialog(parent, name)
 {
 

@@ -54,6 +54,7 @@
 #include "playlist.h"
 #include "constants.h"
 #include "output.h"
+#include <ctime>
 
 extern "C" {
 

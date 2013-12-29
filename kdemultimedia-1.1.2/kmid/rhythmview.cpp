@@ -51,7 +51,7 @@ void RhythmView::setRhythm(int numerator,int denominator)
     num=numerator;
     den=denominator;
     
-    lamps=new (KLedLamp *)[num];
+    lamps=new KLedLamp *[num];
     int w=width()/num;
     int x=0;
 

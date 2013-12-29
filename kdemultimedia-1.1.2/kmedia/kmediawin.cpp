@@ -20,7 +20,7 @@
 // $Id: kmediawin.cpp,v 1.17 1999/01/17 19:51:37 bieker Exp $
 // KMediaWin implementation
 
-#include <iostream.h>
+#include <iostream>
 #include <string.h>
 #include <klocale.h>
 #include <kiconloader.h>

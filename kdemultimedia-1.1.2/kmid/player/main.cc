@@ -35,7 +35,7 @@
 #include <getopt.h>
 #endif
 #include <limits.h>
-#include <iostream.h>
+#include <iostream>
 #include "midispec.h"
 #include "sndcard.h"
 #include "songlist.h"
@@ -65,6 +65,8 @@
  maximum, so you will not hear a difference between 120 and 200, but that
  depends on the song)
  */
+
+using namespace std;
 
 /*
  Don't edit beyond this line , unless you know what you are doing :-)

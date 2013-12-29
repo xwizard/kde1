@@ -24,6 +24,7 @@
 #include "songlist.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <cstring>
 
 SongList::SongList(void)
 {

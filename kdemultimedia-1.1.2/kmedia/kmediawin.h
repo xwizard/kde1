@@ -27,7 +27,7 @@
 const int	WIDTH  = 25;
 const int	HEIGHT = 30;
 
-#include <iostream.h>
+#include <iostream>
 
 #include <qpushbt.h>
 #include <qlabel.h>

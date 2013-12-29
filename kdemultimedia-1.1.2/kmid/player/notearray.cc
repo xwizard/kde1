@@ -23,6 +23,7 @@
 ***************************************************************************/
 
 #include "notearray.h"
+#include <cstring>
 
 NoteArray::NoteArray(void)
 {
