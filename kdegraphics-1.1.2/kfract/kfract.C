@@ -22,7 +22,7 @@
 
     */
 
-#include <iostream.h>
+#include <iostream>
 #include <qkeycode.h>
 #include <kmsgbox.h>
 
