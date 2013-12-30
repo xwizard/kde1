@@ -6,7 +6,8 @@
 # initialize the configuration first.
 
 kcontrol -init
-
+kwm &
+PID=`pidof kwm`
 # Start the common desktop tools in the background.
 # The sleeps reduce disk usage during startup.
 # kaudioserver will put itself in the background automagically
@@ -19,9 +20,9 @@ sleep 1 ; kaudioserver
 
 (sleep 1 && exec krootwm) &
 (sleep 1 && exec kpanel) &
-(sleep 3 && exec kbgndwm) &
+(sleep 1 && exec kbgndwm) &
 
 # finally, give the session control to the window manager
 
-sleep 2 ; exec kwm
+sleep 2 ; wait $PID
 
