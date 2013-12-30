@@ -388,7 +388,7 @@ static int vc_alloc(int j)
 {
   int i=voices, lowest=-1; 
   int32 lv=0x7FFFFFFF, v;
-  static void kill_note(int);
+  //static void kill_note(int);
 
   current_polyphony = 0;
 

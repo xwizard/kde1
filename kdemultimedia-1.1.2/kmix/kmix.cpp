@@ -25,7 +25,7 @@ static char rcsid[]="$Id: kmix.cpp,v 1.44.2.2 1999/07/18 20:53:29 esken Exp $";
 
 #include <stdio.h>
 #include <unistd.h>
-#include <iostream.h>
+#include <iostream>
 #include <kapp.h>
 #include <kiconloader.h>
 #include <klocale.h>
@@ -44,6 +44,7 @@ static char rcsid[]="$Id: kmix.cpp,v 1.44.2.2 1999/07/18 20:53:29 esken Exp $";
 #include <qlabel.h>
 #include <qaccel.h>
 
+using namespace std;
 
 KApplication   *globalKapp;
 KIconLoader    *globalKIL;

@@ -153,7 +153,7 @@ void CDDialog::setData(
       delete [] cdinfo.cddbtoc;
 
     
-    cdinfo.cddbtoc =  new (struct mytoc) [cd->ntracks + 2];
+    cdinfo.cddbtoc =  new struct mytoc [cd->ntracks + 2];
 
     cdinfo.magicID = cd->magicID;	/* cddb magic disk id            */
     cdinfo.ntracks = cd->ntracks;	/* Number of tracks on the disc  */

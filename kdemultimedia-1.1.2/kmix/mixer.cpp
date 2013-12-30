@@ -20,7 +20,7 @@
  * Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
                                                                             
-#include "iostream.h"
+#include <iostream>
 #include <unistd.h>
 #include <string.h>
 
@@ -108,6 +108,7 @@
 #define NO_MIXER
 #endif
 
+using namespace std;
 
 // If you change the definition here, make sure to fix the declaration in kmix.cpp, too.
 char KMixErrors[6][200]=
