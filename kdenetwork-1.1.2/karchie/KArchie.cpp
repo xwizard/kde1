@@ -49,10 +49,12 @@
 
 #include <qdstream.h> 
 
-#include <fstream.h>
+#include <fstream>
 
 #define KFM_WINDOW "kfmclient"
 #define KFM_OPEN_URL "openURL"
+
+using namespace std;
 
 TmpOpenFile::~TmpOpenFile()
 {

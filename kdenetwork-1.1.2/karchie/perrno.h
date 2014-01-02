@@ -19,12 +19,12 @@
 
 #define		P_ERR_STRING_SZ 100	 /* Size of error string	    */
 
-extern int	perrno;
-extern char	p_err_string[];
+//extern int	perrno;
+//extern char	p_err_string[];
 extern char	*p_err_text[];
 
-extern int	pwarn;
-extern char	p_warn_string[];
+//extern int	pwarn;
+//extern char	p_warn_string[];
 extern char	*p_warn_text[];
 
 /* Error codes returned or found in verrno */

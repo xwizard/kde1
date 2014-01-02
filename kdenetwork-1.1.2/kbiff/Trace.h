@@ -40,7 +40,7 @@
 #define TRACE_H
 
 #include <qstring.h>
-#include <iostream.h>
+#include <iostream>
 #include <stdio.h>
 #include <stdarg.h>
 
@@ -49,6 +49,8 @@
 #define TRACEF    __trace.outputf
 #define TRACEON   Trace __trace
 #define TRACETAB  __trace.setTabStop
+
+using namespace std;
 
 class Trace
 {

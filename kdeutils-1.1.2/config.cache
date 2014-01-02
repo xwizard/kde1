@@ -1,0 +1,118 @@
+# This file is a shell script that caches the results of configure
+# tests run on this system so they can be shared between configure
+# scripts and configure runs.  It is not useful on other systems.
+# If it contains results you don't want to keep, you may remove or edit it.
+#
+# By default, configure uses ./config.cache as the cache file,
+# creating it if it does not exist already.  You can give configure
+# the --cache-file=FILE option to use a different cache file; that is
+# what configure does when it calls configure scripts in
+# subdirectories, so they share the cache.
+# Giving --cache-file=/dev/null disables caching, for debugging configure.
+# config.status only pays attention to the cache file if you give it the
+# --recheck option to rerun configure.
+#
+ac_cv_c_long_double=${ac_cv_c_long_double=yes}
+ac_cv_compile_kfloppy=${ac_cv_compile_kfloppy=yes}
+ac_cv_func_chflags=${ac_cv_func_chflags=no}
+ac_cv_func_connect=${ac_cv_func_connect=yes}
+ac_cv_func_fabsl=${ac_cv_func_fabsl=no}
+ac_cv_func_fchown=${ac_cv_func_fchown=yes}
+ac_cv_func_getmntinfo=${ac_cv_func_getmntinfo=no}
+ac_cv_func_getrusage=${ac_cv_func_getrusage=yes}
+ac_cv_func_inet_ntoa=${ac_cv_func_inet_ntoa=yes}
+ac_cv_func_llseek=${ac_cv_func_llseek=yes}
+ac_cv_func_remove=${ac_cv_func_remove=yes}
+ac_cv_func_shmat=${ac_cv_func_shmat=yes}
+ac_cv_func_socket=${ac_cv_func_socket=yes}
+ac_cv_func_srandom=${ac_cv_func_srandom=yes}
+ac_cv_func_strcasecmp=${ac_cv_func_strcasecmp=yes}
+ac_cv_func_strdup=${ac_cv_func_strdup=yes}
+ac_cv_func_vprintf=${ac_cv_func_vprintf=yes}
+ac_cv_have_bool=${ac_cv_have_bool=yes}
+ac_cv_have_kde=${ac_cv_have_kde='have_kde=yes     ac_kde_includes=/opt/kde/include ac_kde_libraries=/opt/kde/lib'}
+ac_cv_have_optreset=${ac_cv_have_optreset=no}
+ac_cv_have_qt=${ac_cv_have_qt='have_qt=yes     ac_qt_includes=/opt/kde/include ac_qt_libraries=/opt/kde/lib'}
+ac_cv_have_x=${ac_cv_have_x='have_x=yes          ac_x_includes= ac_x_libraries='}
+ac_cv_header_dirent_dirent_h=${ac_cv_header_dirent_dirent_h=yes}
+ac_cv_header_dirent_h=${ac_cv_header_dirent_h=yes}
+ac_cv_header_errno_h=${ac_cv_header_errno_h=yes}
+ac_cv_header_fcntl_h=${ac_cv_header_fcntl_h=yes}
+ac_cv_header_getopt_h=${ac_cv_header_getopt_h=yes}
+ac_cv_header_ieeefp_h=${ac_cv_header_ieeefp_h=no}
+ac_cv_header_linux_fd_h=${ac_cv_header_linux_fd_h=yes}
+ac_cv_header_linux_fs_h=${ac_cv_header_linux_fs_h=yes}
+ac_cv_header_linux_major_h=${ac_cv_header_linux_major_h=yes}
+ac_cv_header_mntent_h=${ac_cv_header_mntent_h=yes}
+ac_cv_header_net_if_h=${ac_cv_header_net_if_h=yes}
+ac_cv_header_netinet_in_h=${ac_cv_header_netinet_in_h=yes}
+ac_cv_header_stdarg_h=${ac_cv_header_stdarg_h=yes}
+ac_cv_header_stdc=${ac_cv_header_stdc=yes}
+ac_cv_header_stdlib_h=${ac_cv_header_stdlib_h=yes}
+ac_cv_header_sys_disklabel_h=${ac_cv_header_sys_disklabel_h=no}
+ac_cv_header_sys_resource_h=${ac_cv_header_sys_resource_h=yes}
+ac_cv_header_sys_sockio_h=${ac_cv_header_sys_sockio_h=no}
+ac_cv_header_sys_stat_h=${ac_cv_header_sys_stat_h=yes}
+ac_cv_header_sys_time_h=${ac_cv_header_sys_time_h=yes}
+ac_cv_header_sys_types_h=${ac_cv_header_sys_types_h=yes}
+ac_cv_header_sys_user_h=${ac_cv_header_sys_user_h=yes}
+ac_cv_header_time=${ac_cv_header_time=yes}
+ac_cv_header_unistd_h=${ac_cv_header_unistd_h=yes}
+ac_cv_ksize_t=${ac_cv_ksize_t=socklen_t}
+ac_cv_lib_compat_main=${ac_cv_lib_compat_main=no}
+ac_cv_lib_crypt_main=${ac_cv_lib_crypt_main=yes}
+ac_cv_lib_dir_opendir=${ac_cv_lib_dir_opendir=no}
+ac_cv_lib_dnet_dnet_ntoa=${ac_cv_lib_dnet_dnet_ntoa=no}
+ac_cv_lib_dnet_stub_dnet_ntoa=${ac_cv_lib_dnet_stub_dnet_ntoa=no}
+ac_cv_lib_gif=${ac_cv_lib_gif=yes}
+ac_cv_lib_jpeg=${ac_cv_lib_jpeg=-ljpeg}
+ac_cv_lib_m_isinf=${ac_cv_lib_m_isinf=yes}
+ac_cv_lib_png=${ac_cv_lib_png='-lpng -lz -lm'}
+ac_cv_lib_socket_socket=${ac_cv_lib_socket_socket=no}
+ac_cv_lib_ucb_killpg=${ac_cv_lib_ucb_killpg=no}
+ac_cv_lib_z=${ac_cv_lib_z=-lz}
+ac_cv_maxpathlen=${ac_cv_maxpathlen=4096}
+ac_cv_path_AWK=${ac_cv_path_AWK=/usr/bin/awk}
+ac_cv_path_CHMOD=${ac_cv_path_CHMOD=/usr/bin/chmod}
+ac_cv_path_CP=${ac_cv_path_CP=/usr/bin/cp}
+ac_cv_path_GMSGFMT=${ac_cv_path_GMSGFMT=/usr/bin/msgfmt}
+ac_cv_path_LD=${ac_cv_path_LD=/usr/bin/ld}
+ac_cv_path_LN=${ac_cv_path_LN=/usr/bin/ln}
+ac_cv_path_MSGFMT=${ac_cv_path_MSGFMT=/usr/bin/msgfmt}
+ac_cv_path_MV=${ac_cv_path_MV=/usr/bin/mv}
+ac_cv_path_NM=${ac_cv_path_NM='/usr/bin/nm -B'}
+ac_cv_path_RM=${ac_cv_path_RM=/usr/bin/rm}
+ac_cv_path_SED=${ac_cv_path_SED=/usr/bin/sed}
+ac_cv_path_XGETTEXT=${ac_cv_path_XGETTEXT=/usr/bin/xgettext}
+ac_cv_path_install=${ac_cv_path_install='/usr/bin/install -c'}
+ac_cv_prog_AR=${ac_cv_prog_AR=ar}
+ac_cv_prog_CC=${ac_cv_prog_CC=gcc}
+ac_cv_prog_CPP=${ac_cv_prog_CPP='gcc -E'}
+ac_cv_prog_CXX=${ac_cv_prog_CXX=g++}
+ac_cv_prog_CXXCPP=${ac_cv_prog_CXXCPP='g++ -E'}
+ac_cv_prog_LN_S=${ac_cv_prog_LN_S='ln -s'}
+ac_cv_prog_RANLIB=${ac_cv_prog_RANLIB=ranlib}
+ac_cv_prog_STRIP=${ac_cv_prog_STRIP=strip}
+ac_cv_prog_cc_cross=${ac_cv_prog_cc_cross=no}
+ac_cv_prog_cc_g=${ac_cv_prog_cc_g=yes}
+ac_cv_prog_cc_works=${ac_cv_prog_cc_works=yes}
+ac_cv_prog_cxx_cross=${ac_cv_prog_cxx_cross=no}
+ac_cv_prog_cxx_works=${ac_cv_prog_cxx_works=yes}
+ac_cv_prog_gcc=${ac_cv_prog_gcc=yes}
+ac_cv_prog_gnu_ld=${ac_cv_prog_gnu_ld=yes}
+ac_cv_prog_gxx=${ac_cv_prog_gxx=yes}
+ac_cv_prog_make_make_set=${ac_cv_prog_make_make_set=yes}
+ac_cv_sizeof_int=${ac_cv_sizeof_int=4}
+ac_cv_sizeof_long=${ac_cv_sizeof_long=8}
+ac_cv_sizeof_long_long=${ac_cv_sizeof_long_long=8}
+ac_cv_sizeof_short=${ac_cv_sizeof_short=2}
+ac_cv_sys_global_symbol_pipe=${ac_cv_sys_global_symbol_pipe='sed -n -e '\''s/^.* [ABCDGISTUW] \([_A-Za-z][_A-Za-z0-9]*\)$/\1 \1/p'\'''}
+e2fsprogs_cv_ino_t=${e2fsprogs_cv_ino_t=yes}
+e2fsprogs_cv_ioctl_ext2=${e2fsprogs_cv_ioctl_ext2=no}
+e2fsprogs_cv_struct_d_namlen=${e2fsprogs_cv_struct_d_namlen=no}
+e2fsprogs_cv_struct_st_flags=${e2fsprogs_cv_struct_st_flags=no}
+kde_cv_all_paths=${kde_cv_all_paths='kde_have_all_paths="yes" 	kde_htmldir="/opt/kde/share/doc/HTML" 	kde_appsdir="/opt/kde/share/applnk" 	kde_icondir="/opt/kde/share/icons" 	kde_sounddir="/opt/kde/share/sounds" 	kde_datadir="/opt/kde/share/apps" 	kde_locale="/opt/kde/share/locale" 	kde_cgidir="/opt/kde/cgi-bin" 	kde_confdir="/opt/kde/share/config" 	kde_mimedir="/opt/kde/share/mimelnk" 	kde_toolbardir="/opt/kde/share/toolbar" 	kde_wallpaperdir="/opt/kde/share/wallpapers" 	kde_bindir="/opt/kde/bin" 	kde_partsdir="/opt/kde/parts" 	kde_result=done'}
+kde_cv_libtiff_tiff=${kde_cv_libtiff_tiff='-ltiff -ljpeg -lz'}
+kde_cv_path_moc=${kde_cv_path_moc=/opt/kde/bin/moc}
+kde_cv_qt_direct=${kde_cv_qt_direct=no}
+kde_cv_stl_type_sgi=${kde_cv_stl_type_sgi=yes}

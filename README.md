@@ -31,4 +31,4 @@ Todo
 - Fix kdebase/kaudio build
 - Fix kdeadmin/kuser build
 - Move todos to issue list :)
-- Fix kdemultimedia build
+- Fix kdeutils/kfloppy build
