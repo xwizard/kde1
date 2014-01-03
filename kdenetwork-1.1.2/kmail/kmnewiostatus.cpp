@@ -2,7 +2,7 @@
 // Author: Markus Wuebben <markus.wuebben@kde.org>
 // This code is published under the GPL.
 
-#include <iostream.h>
+#include <iostream>
 #include "kmnewiostatus.h"
 #include "kmnewiostatus.moc"
 

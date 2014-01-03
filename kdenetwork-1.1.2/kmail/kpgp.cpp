@@ -810,7 +810,7 @@ KpgpKey::~KpgpKey()
 }
 
 QString 
-KpgpKey::getKeyName(QWidget *parent, const QStrList *keys = NULL)
+KpgpKey::getKeyName(QWidget *parent, const QStrList *keys)
 {
   KpgpKey pgpkey(parent, i18n("Select key"), keys);
   pgpkey.exec();

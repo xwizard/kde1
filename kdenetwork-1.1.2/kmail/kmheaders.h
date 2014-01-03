@@ -130,7 +130,7 @@ protected:
 private:
   /** Override the tab list box so that we can control some
       internal variables here */
-  virtual void KMHeaders::removeItem(int itemIndex);
+  virtual void removeItem(int itemIndex);
 
   virtual void updateMessageList(void);
 
