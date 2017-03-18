@@ -4,11 +4,13 @@ Currently it contains working (more or less) kdebase, admin, games, graphics.
 Qt-1.45 patched to build with gcc4.
 Most Qt examples work, two or three segfault. Currently it's not an issue.
 
+![KDE1 screenshot][kde1]
+
 Issues
 ===
 - No UTF.
 - Mouse scroll doesn't work
-- Keyboard layouts doesn't work
+- Keyboard layouts don't work
 - Sometimes crashes during launch
 If you find any other issues - leave a sign in issues list
 

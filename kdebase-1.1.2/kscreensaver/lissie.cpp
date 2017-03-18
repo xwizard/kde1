@@ -20,7 +20,10 @@
 #endif
 
 #include "xlock.h"
-#include <math.h>
+#include <cmath>
+#include <algorithm>
+
+using namespace std;
 
 #define MAXSPEED 100
 #define MINSPEED 0
